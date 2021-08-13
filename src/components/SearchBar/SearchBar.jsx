@@ -12,7 +12,7 @@ const SearchBar = () => {
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="Search…"
+              placeholder="Suchen…"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,

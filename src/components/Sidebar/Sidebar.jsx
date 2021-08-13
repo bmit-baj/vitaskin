@@ -10,15 +10,31 @@ import Divider from '@material-ui/core/Divider';
 import Hidden from '@material-ui/core/Hidden';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import SearchBar from '../SearchBar/SearchBar';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
 import useStyles from './styles';
-import categories from '../../assets/data/Navigation';
+import { NavigationData } from '../../assets/data'
+import { useHistory } from 'react-router-dom'
+import { withStyles } from '@material-ui/core/styles';
 
 const Sidebar = (props) => {
 
+    const StyledListItem = withStyles({
+        root: {
+          "&.Mui-selected": {
+            backgroundColor: 'black',
+          }
+        },
+      })(ListItem);
+
+    const [selectedIndex, setSelectedIndex] = React.useState(1);
+
+    const handleListItemClick = (event, index) => {
+        setSelectedIndex(index);
+    };
+
+    const history = useHistory();
     const { window } = props;
     const classes = useStyles();
     const theme = useTheme();
@@ -37,13 +53,18 @@ const Sidebar = (props) => {
           </div>
           <Divider />
           <List>
-            {categories.map((categories) => (
-              <ListItem button key={categories.text}>
+            {NavigationData.map((categories) => (
+              <StyledListItem
+                button 
+                selected={selectedIndex === categories.id} 
+                key={categories.text} 
+                onClick={(event) => {handleListItemClick(event, categories.id); history.push(categories.path)}}
+              >
                 <ListItemIcon>
                     {categories.icon}
                 </ListItemIcon>
                 <ListItemText primary={categories.text} />
-              </ListItem>
+              </StyledListItem>
             ))}
           </List>
         </div>
@@ -56,17 +77,15 @@ const Sidebar = (props) => {
             <CssBaseline />
             <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar>
-                <IconButton
-                    color="inherit"
-                    aria-label="open drawer"
-                    edge="start"
-                    onClick={handleDrawerToggle}
-                    className={classes.menuButton}
-                >
-                    <MenuIcon />
-                </IconButton>
-                <SearchBar />
-                
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={handleDrawerToggle}
+                        className={classes.menuButton}
+                    >
+                        <MenuIcon />
+                    </IconButton>
                 </Toolbar>
             </AppBar>
             <nav className={classes.drawer} aria-label="Menu">
@@ -88,13 +107,13 @@ const Sidebar = (props) => {
                 </Drawer>
                 </Hidden>
                 <Hidden xsDown implementation="css">
-                <Drawer
-                    classes={{
-                    paper: classes.drawerPaper,
-                    }}
-                    variant="permanent"
-                    open
-                >
+                    <Drawer
+                        classes={{
+                        paper: classes.drawerPaper,
+                        }}
+                        variant="permanent"
+                        open
+                    >
                     {drawer}
                 </Drawer>
                 </Hidden>

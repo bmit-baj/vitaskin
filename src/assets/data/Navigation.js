@@ -9,26 +9,31 @@ const categories = [
         id: 1, 
         text: 'Dashboard', 
         icon: <DashboardIcon />,
+        path : '/'
     },
     {   
         id: 2, 
         text: 'Kunden', 
         icon: <PeopleIcon />,
+        path: '/kunden'
     },
     {   
         id: 3, 
         text: 'Produkte', 
         icon: <SpaIcon />,
+        path: '/produkte'
     },
     {   
         id: 4, 
         text: 'Verkäufe', 
         icon: <ShoppingCartIcon />,
+        path: '/verkaeufe'
     },
     {   
         id: 5, 
         text: 'Statistik', 
         icon: <ShowChartIcon />,
+        path: '/statistik'
     },
 ];
 

@@ -5,5 +5,7 @@ export default makeStyles((theme) => ({
         backgroundColor: '#fafafb',
         minHeight: '100vh',
     },
-
+    element: {
+        padding: theme.spacing(2)
+    },
   }));
