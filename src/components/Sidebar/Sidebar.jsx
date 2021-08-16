@@ -23,7 +23,8 @@ const Sidebar = (props) => {
     const StyledListItem = withStyles({
         root: {
           "&.Mui-selected": {
-            backgroundColor: 'black',
+            backgroundColor: ' #e3f7f8',
+            borderRight: '1mm solid #2ea3f2'
           }
         },
       })(ListItem);
