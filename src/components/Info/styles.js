@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
           width: "100%",
           padding: theme.spacing(1.5),
           [theme.breakpoints.up('lg')]: {
-            height: "100%",
+            height: "400px",
           },
         }
     },
@@ -26,8 +26,5 @@ export default makeStyles((theme) => ({
       },
         width: '100%',
         height: '100%',
-        display: 'flex',
-        alignItems: 'center', 
-        justifyContent: 'center',
     }
 }));

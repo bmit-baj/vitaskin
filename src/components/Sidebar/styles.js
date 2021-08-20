@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const drawerWidth = 240;
+const drawerWidth = 230;
 
 export default makeStyles((theme) => ({
     root: {
@@ -21,6 +21,8 @@ export default makeStyles((theme) => ({
         },
         backgroundColor: 'white',
         color: 'black',
+        display: 'flex',
+        justifyContent: 'space-between'
       },
       menuButton: {
         marginRight: theme.spacing(2),
@@ -53,4 +55,11 @@ export default makeStyles((theme) => ({
       siteName: {
         marginLeft: theme.spacing(2.5)
       },
+      Toolbar: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        [theme.breakpoints.up('sm')]: {
+          justifyContent: 'flex-end',
+        },
+      }
   }));

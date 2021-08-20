@@ -72,12 +72,14 @@ const Sidebar = (props) => {
     );
     
     const container = window !== undefined ? () => window().document.body : undefined;
-    
+
+    var time = new Date().toLocaleTimeString();
+
     return (
         <div className={classes.root}>
             <CssBaseline />
             <AppBar position="fixed" className={classes.appBar}>
-                <Toolbar>
+                <Toolbar className={classes.Toolbar}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -87,6 +89,7 @@ const Sidebar = (props) => {
                     >
                         <MenuIcon />
                     </IconButton>
+                    <Typography>{time}</Typography>
                 </Toolbar>
             </AppBar>
             <nav className={classes.drawer} aria-label="Menu">

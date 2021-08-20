@@ -3,7 +3,7 @@ import React from 'react';
 // Import der benötigten MaterialUI Components
 import Grid from '@material-ui/core/Grid';
 // Import der benötigten Components
-import { PageMenu } from '../../components'
+import {  } from '../../components'
 // Import der Daten für die Components
 import {  } from '../../assets/data'
 // Import der benötigten Style-Sheets
@@ -19,7 +19,7 @@ const Customers = () => {
         <div className={root.root}>
             <main className={main.content}>
                 <div className={main.toolbar} />
-                <PageMenu />
+                
             </main>
         </div>
     )

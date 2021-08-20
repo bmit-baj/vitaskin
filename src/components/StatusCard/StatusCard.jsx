@@ -14,7 +14,7 @@ const CounterCard = (props) => {
                     {props.icon}
                 </div>
                 <div className={classes.info}>
-                    <Typography variant='h3'>
+                    <Typography variant='h4'>
                         {props.count}
                     </Typography>
                     <Typography variant='subtitle1'>

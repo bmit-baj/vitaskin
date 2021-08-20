@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
         display: "flex",
         "& > *": {
           width: "100%",
-          height: theme.spacing(23),
+          height: theme.spacing(18),
           }
     },
     paper: {
@@ -17,10 +17,10 @@ export default makeStyles((theme) => ({
         justifyContent: 'center',
     },
     icon: {
-        [theme.breakpoints.down('lg')]: {
+        [theme.breakpoints.down('md')]: {
             display: 'none',
-          },
-        marginRight: theme.spacing(7),
+        },
+        marginRight: theme.spacing(5),
     },
     info: {
         textAlign: 'center',
