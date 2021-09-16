@@ -12,12 +12,11 @@ const Menu = (props) => {
             <Box className={classes.paper} boxShadow={3}>
                 <div className={classes.component}>
                     <Typography variant="h6">Info</Typography>
-                    <div>
                         <Typography>Server: Offline</Typography>
                         <Divider />
                         <Typography>Verbindung: inaktiv</Typography>
                         <Divider />
-                        <Typography>Version: v2.0</Typography>
+                        <Typography>Version: v2.0 </Typography>
                 </div>
             </Box>
         </div>
