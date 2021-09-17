@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { SmartDisplay } from '@mui/icons-material';
 
 export default makeStyles((theme) => ({
     root: {
@@ -7,6 +8,9 @@ export default makeStyles((theme) => ({
     },
     heading: {
         marginBottom: theme.spacing(3),
-        marginTop: theme.spacing(1)
+        marginTop: theme.spacing(1),
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between'
     }
   }));

@@ -23,13 +23,14 @@ export default makeStyles((theme) => ({
         marginBottom: theme.spacing(3)
     },
     content: {
-        margin: theme.spacing(2)
+        margin: theme.spacing(2),
     },
     section: {
         marginTop: theme.spacing(2)
     },
     actions: {
+        marginTop: theme.spacing(2),
         display: 'flex',
-        alignContent: 'bottom',
+        justifyContent: 'flex-start'
     }
 }));

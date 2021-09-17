@@ -9,7 +9,6 @@ const DataTable = (props) => {
     const classes = useStyles();
 
     return (
-
         <div className={classes.root}>
                 <MUIDataTable
                     title={props.title}
