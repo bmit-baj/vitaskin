@@ -27,11 +27,11 @@ const Products = () => {
                 <div className={main.toolbar} />
                 <Stack direction="row" className={root.heading}>
                     <Typography variant="h4">
-                        Produkte
+                        Dienstleistungen
                     </Typography>
                     <Fab variant="extended" color="primary" aria-label="add" size="medium">
                         <AddIcon sx={{ mr: 1 }} />
-                        Produkt hinzufügen
+                        Dienstleistung hinzufügen
                     </Fab>
                 </Stack>
                 <Grid container spacing={3}>

@@ -29,11 +29,17 @@ const DataTable = (props) => {
                             label="Vorname"
                             defaultValue="Max"
                             variant="standard"
+                            sx={{
+                                width: '50%',
+                            }}
                         />
                         <TextField
                             label="Nachname"
                             defaultValue="Mustermann"
                             variant="standard"
+                            sx={{
+                                width: '50%',
+                            }}
                         />
                     </Stack>
                     <Stack direction="row" spacing={3} className={classes.section}>

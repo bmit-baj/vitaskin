@@ -24,6 +24,7 @@ export default makeStyles((theme) => ({
     },
     content: {
         margin: theme.spacing(2),
+        width: '100%'
     },
     section: {
         marginTop: theme.spacing(2)
