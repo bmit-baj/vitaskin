@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Import der benötigten Components
 import { Sidebar } from './components';
 // Import der benötigten Pages
-import { Dashboard, Customers} from './pages';
+import { Dashboard, Customers, Products} from './pages';
 
 
 function App() {
@@ -16,6 +16,9 @@ function App() {
         </Route>
         <Route path="/kunden">
             <Customers />
+        </Route>
+        <Route path="/produkte">
+            <Products />
         </Route>
       </Switch>
     </Router>
