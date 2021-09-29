@@ -1,8 +1,10 @@
+// Material-UI Icons
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import EcoIcon from '@material-ui/icons/Eco';
 import PeopleIcon from '@material-ui/icons/People';
 import SpaIcon from '@material-ui/icons/Spa';
 
+// StatusCard Data - Dashboard
 const StatusCardData = [
     {
         name: 'Kunden',

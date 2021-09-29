@@ -4,12 +4,12 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Fab from '@mui/material/Fab';
-import AddIcon from '@mui/icons-material/Add';
-
 // Import der benötigten Components
 import { DataTable, ProductInfo } from '../../components'
 // Import der Daten für die Components
 import { columns, data, options } from '../../assets/data'
+// Import der benötigten MaterialUI Icons
+import AddIcon from '@mui/icons-material/Add';
 // Import der benötigten Style-Sheets
 import mainStyles from '../../components/Sidebar/styles';
 import rootStyles from '../rootStyles';
@@ -43,7 +43,7 @@ const Products = () => {
                             columns={columns}
                         />
                     </Grid>
-                    <Grid item xs={12} sm={6} lg={5}>
+                    <Grid item xs={12} sm={12} lg={5}>
                         <ProductInfo />
                     </Grid>
                 </Grid>

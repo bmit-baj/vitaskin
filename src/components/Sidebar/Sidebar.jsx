@@ -1,4 +1,7 @@
+// Import der benötigten React-Components
 import React from 'react';
+import { useHistory } from 'react-router-dom'
+// Import der benötigten MaterialUI Components
 import { useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -10,13 +13,15 @@ import Divider from '@material-ui/core/Divider';
 import Hidden from '@material-ui/core/Hidden';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import IconButton from '@material-ui/core/IconButton';
+// Import der benötigten MaterialUI Icons
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MenuIcon from '@material-ui/icons/Menu';
-import IconButton from '@material-ui/core/IconButton';
+// Import der benötigten Style-Sheets
 import useStyles from './styles';
-import { NavigationData } from '../../assets/data'
-import { useHistory } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
+// Import der Daten für die Components
+import { NavigationData } from '../../assets/data'
 
 const Sidebar = (props) => {
 

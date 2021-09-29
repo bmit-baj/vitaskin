@@ -1,7 +1,13 @@
+// Import der benötigten React-Components
 import React from 'react'
-import useStyles from './styles';
+// Import der benötigten MaterialUI Components
 import Box from '@material-ui/core/Box';
-import ReactApexCharts from 'react-apexcharts'
+// Import der benötigten ApexChart Components
+import ReactApexCharts from 'react-apexcharts' // https://apexcharts.com/
+// Import der benötigten Style-Sheets
+import useStyles from './styles';
+
+
 
 const GraphSalesCard = (props) => {
 

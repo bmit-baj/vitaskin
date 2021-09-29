@@ -1,15 +1,16 @@
+// Import der benötigten React-Components
 import React from 'react';
+// Import der benötigten MaterialUI Components
 import Box from '@material-ui/core/Box';
-import useStyles from './styles';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { Typography } from '@material-ui/core';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+// Import der benötigten MaterialUI Icons
 import DeleteIcon from '@mui/icons-material/Delete';
-import SendIcon from '@mui/icons-material/Send';
-
-
+// Import der benötigten Style-Sheets
+import useStyles from './styles';
 
 
 const DataTable = (props) => {

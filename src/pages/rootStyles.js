@@ -1,5 +1,5 @@
+// Import der benötigten MaterialUI Funktionen
 import { makeStyles } from '@material-ui/core/styles';
-import { SmartDisplay } from '@mui/icons-material';
 
 export default makeStyles((theme) => ({
     root: {

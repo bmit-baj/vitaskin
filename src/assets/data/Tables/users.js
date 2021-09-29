@@ -1,3 +1,4 @@
+//Spalten Einträge 
 export const columns = [
   {
    name: "name",
@@ -33,6 +34,7 @@ export const columns = [
   },
  ];
 
+ // User Daten -> 
 export const data = [
     { name: "Joe James", company: "Test Corp", city: "Yonkers", state: "NY" },
     { name: "John Walsh", company: "Test Corp", city: "Hartford", state: "CT" },
@@ -52,6 +54,7 @@ export const data = [
     { name: "James Houston", company: "Test Corp", city: "Dallas", state: "TX" },
    ];
    
+   //Tabellen Optionen
    export const options = {
      filterType: 'checkbox',
      rowsPerPage: 7,

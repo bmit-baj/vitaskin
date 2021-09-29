@@ -1,5 +1,8 @@
+// Import der benötigten React-Components
 import React from 'react'
+// Import der benötigten Style-Sheets
 import useStyles from './styles';
+// Import der benötigten MaterialUI Components
 import Box from '@material-ui/core/Box';
 import { Divider, Typography } from '@material-ui/core';
 

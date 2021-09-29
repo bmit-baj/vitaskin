@@ -1,3 +1,4 @@
+// Import der benötigten MaterialUI Funktionen
 import { makeStyles } from '@material-ui/core/styles';
 
 const drawerWidth = 230;

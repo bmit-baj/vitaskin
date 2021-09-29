@@ -1,27 +1,31 @@
+// Import der benötigten React-Components
 import React from 'react';
+// Import der benötigten MaterialUI Components
 import Box from '@material-ui/core/Box';
-import useStyles from './styles';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { Typography } from '@material-ui/core';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import DeleteIcon from '@mui/icons-material/Delete';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+// Import der benötigten MaterialUI Icons
+import DeleteIcon from '@mui/icons-material/Delete';
+// Import der benötigten Style-Sheets
+import useStyles from './styles';
 
 const DataTable = (props) => {
 
     const classes = useStyles();
 
     const [mitarbeiter, setMitarbeiter] = React.useState('');
-    const [katerogie, setKategorie] = React.useState('');
-
     const handleChangeM = (event) => {
         setMitarbeiter(event.target.value);
     };
+
+    const [katerogie, setKategorie] = React.useState('');
     const handleChangeK = (event) => {
         setKategorie(event.target.value);
     };

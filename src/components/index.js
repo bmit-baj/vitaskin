@@ -1,3 +1,5 @@
+// Export aller Components
+
 export { default as Chart } from './Chart/ChartCard'
 export { default as Sidebar } from './Sidebar/Sidebar'
 export { default as StatusCard } from './StatusCard/StatusCard'

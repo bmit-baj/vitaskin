@@ -1,3 +1,4 @@
+// Import der benötigten MaterialUI Funktionen
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
@@ -11,8 +12,7 @@ export default makeStyles((theme) => ({
     paper: {
         display: 'flex',
         backgroundColor: 'white',
-        border: '1px solid #eee',
-        borderRadius: '15px',
+        borderRadius: '5px',
         alignItems: 'center', 
         justifyContent: 'center',
     },

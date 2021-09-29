@@ -1,7 +1,11 @@
+// Import der benötigten React-Components
 import React from 'react';
+// Import der benötigten MaterialUI Components
 import Box from '@material-ui/core/Box';
-import useStyles from './styles';
 import Typography from '@material-ui/core/Typography';
+// Import der benötigten Style-Sheets
+import useStyles from './styles';
+
 
 const CounterCard = (props) => {
 

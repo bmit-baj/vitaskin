@@ -4,8 +4,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Fab from '@mui/material/Fab';
-import AddIcon from '@mui/icons-material/Add';
-
+import { Stack } from '@mui/material';
 // Import der benötigten Components
 import { DataTable, UserInfo } from '../../components'
 // Import der Daten für die Components
@@ -13,7 +12,8 @@ import { columns, data, options } from '../../assets/data'
 // Import der benötigten Style-Sheets
 import mainStyles from '../../components/Sidebar/styles';
 import rootStyles from '../rootStyles';
-import { Stack } from '@mui/material';
+// Import der benötigten MaterialUI Icons
+import AddIcon from '@mui/icons-material/Add';
 
 
 const Customers = () => {
@@ -47,7 +47,6 @@ const Customers = () => {
                         <UserInfo />
                     </Grid>
                 </Grid>
-
             </main>
         </div>
     )
